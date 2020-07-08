@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
+def home():
     username = request.args.get('username', None)
     if not username:
         return "Required param: username"
