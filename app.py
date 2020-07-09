@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/generate_ticket')
 def generate_ticket_api():
     username = request.args.get('username', None)
-    code = request.args.get('username', "")
+    code = request.args.get('code', "")
     return generate_ticket(username, code)
 
 
