@@ -15,7 +15,7 @@ def _sort_col(ticket_array, col):
     print(ticket_array[:, col])
 
 
-def get_board(username):
+def get_ticket(username):
     date_str = date.today().strftime("%Y%m%d")
     seed = date_str + username
     random.seed(seed)
