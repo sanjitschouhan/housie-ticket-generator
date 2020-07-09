@@ -1,6 +1,6 @@
-# Tabmola Board Creation
+# Housie Ticker Generator
 
-Creates unique tambola(housie) board based on username and date. Same username on same date will generate same board.
+Creates unique housie(tambola) ticket based on username and date. Same username on same date will generate same board.
 
 
 ### Setup
