@@ -15,9 +15,9 @@ def _sort_col(ticket_array, col):
     print(ticket_array[:, col])
 
 
-def get_ticket(username):
+def get_ticket(username, code):
     date_str = date.today().strftime("%Y%m%d")
-    seed = date_str + username
+    seed = date_str + code + username
     random.seed(seed)
     ticket_array = np.zeros((3, 9), dtype=int)
     total_indices = [(i, j) for i in range(3) for j in range(9)]
